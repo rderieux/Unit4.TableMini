@@ -12,6 +12,6 @@ Content-Type: application/json
 
 {
   "name": "Hungry Guest",
-  "email": "super.duper@hungry.com",
-  "partySize": 3
+  "email": "super.duper2@hungry.com",
+  "partySize": 4
 }
