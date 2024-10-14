@@ -21,6 +21,7 @@ router.get("/:id", async (req, res, next) => {
       where: { id: +id },
       include: { reservations: true },
     });
+    res.json(restaurant);
   } catch (error) {
     next(error);
   }
