@@ -17,7 +17,7 @@ router.get("/", async (req, res, next) => {
 router.get("/:id", async (req, res, next) => {
   const { id } = req.params;
   try {
-    const restaurant = await prisma.reservation.findFirstOrThrow({
+    const restaurant = await prisma.reservation.findUniqueOrThrow({
       where: { id: +id },
       include: { reservations: true },
     });
